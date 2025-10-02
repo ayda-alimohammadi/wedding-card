@@ -1,0 +1,174 @@
+/* فونت‌ها */
+/* @import url('https://raw.githubusercontent.com/ayda-alimohammadi/wedding/main/Ms%20Stusi.otf'); انگلیسی */
+/* @import url('https://raw.githubusercontent.com/ayda-alimohammadi/wedding/main/IranNastaliq.ttf');   فارسی (جایگزین نستعلیق آنلاین) */
+@font-face {
+    font-family: "Nastaliq";
+    src: url('./Shekasteh\ V2.001.ttf') format("truetype");
+    /* src: url('https://raw.githubusercontent.com/ayda-alimohammadi/wedding/main/IranNastaliq.ttf') format("truetype"); */
+  }
+@font-face {
+    font-family: "stusi";
+    src: url('https://raw.githubusercontent.com/ayda-alimohammadi/wedding/main/Ms%20Stusi.otf') format("opentype");
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* font-family: 'stusi', sans-serif; */
+  background: #fdf6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  width: 360px;
+  height: 100vh;
+  border-radius: 20px;
+  /* overflow: hidden; */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+    position: relative;
+    flex: 1.5;
+  }
+
+.background {
+  position: absolute;
+  inset: 0;
+  background: url('https://raw.githubusercontent.com/ayda-alimohammadi/wedding/main/IMG_0694%20(1).jpeg') top center/cover no-repeat;
+  /* background: url('https://raw.githubusercontent.com/ayda-alimohammadi/wedding/main/photo_1404-07-07%2018.02.24.jpeg') top center/cover no-repeat; */
+  z-index: 1;
+  }
+
+/* افکت محو شدن پایین عکس */
+.fade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, #fff 100%);
+  z-index: 2;
+}
+
+.content {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px;
+  gap: 15px;
+}
+
+.logo {
+  font-family: 'stusi', cursive;
+  text-transform: uppercase;
+  font-size: 46px;
+  color: #444;
+}
+
+.invitation {
+  font-family: "Nastaliq", serif;
+  font-size: 40px;
+  line-height: 0.5;
+  color: #333;
+
+}
+.invitation p{
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.names {
+  font-family: "Nastaliq", serif;
+  /* font-family: 'stusi', cursive; */
+  font-size: 60px;
+  color: #555;
+  margin: 0px;
+  opacity: 0.7;
+  gap: 15px;
+}
+.names p {
+  gap: 15px;
+  margin: 0px;
+}
+
+
+
+/* .details {
+    background: #fff;
+    flex: 0.5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding:0px 40px 40px 40px;
+  } */
+  
+  /* .icon-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Vazirmatn", sans-serif;
+    font-size: 16px;
+    color: #444;
+  } */
+  .details {
+    background: #fff;
+    padding: 25px 15px;
+    text-align: center;
+  }
+  
+  .icons-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+
+  }
+
+  .icons-row .icon-box i:hover {
+    color: rgba(255, 105, 180, 0.9); /* وقتی موس رفت روش پررنگ‌تر شه */
+    transform: scale(1.2);          /* کمی بزرگ شه */
+  }
+
+
+  .icon-box i {
+    font-size: 40px;
+    /* opacity: 0.5; */
+    color: rgba(196, 164, 132, 0.4);
+    transition: all 0.3s ease;
+  }
+  
+  .icon {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+  
+  .icon-box p {
+    font-family: "Nastaliq", serif;
+    font-size: 15px;
+    color: #333;
+    margin: 0;
+  }
+  
