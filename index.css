@@ -9,6 +9,7 @@
 }
 html {
   scroll-behavior: smooth;
+  width: ;
 
 }
 body, html {
@@ -20,6 +21,7 @@ body, html {
   justify-content: center;
   align-items: center;
   gap: 50px;
+  overflow-x: hidden;
 }
 
 .card {
@@ -314,84 +316,4 @@ body, html {
   font-size: 22px;
   color: #c4a484;
   margin-top: 8px;
-}
-
-/* 📱 برای موبایل‌های کوچیک */
-@media (max-width: 480px) {
-  .card {
-    width: 100%;
-    height: auto;
-    border-radius: 0;
-    margin: 0;
-  }
-
-  .background, .fade {
-    border-radius: 0;
-  }
-
-  .content {
-    height: auto;
-    padding: 40px 15px;
-    gap: 10px;
-  }
-
-  .names {
-    font-size: 40px;
-  }
-
-  .invitation p {
-    font-size: 18px;
-    line-height: 1.6;
-  }
-
-  .date-card .row {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .year, .month, .day-number {
-    font-size: 18px;
-  }
-
-  .icons-row {
-    flex-direction: row;
-    gap: 20px;
-    margin-top: 20px;
-  }
-
-  .icons-row .icon-box i {
-    font-size: 22px;
-  }
-
-  /* تایم‌لاین تو موبایل یک‌ستونه بشه */
-  .timeline {
-    margin: 60px auto;
-    width: 100%;
-    padding: 0 10px;
-  }
-
-  .timeline::before {
-    left: 10px;
-    height: 100%;
-  }
-
-  .event {
-    width: 100%;
-    margin: 20px 0;
-    left: 0 !important;
-    background: #fff;
-  }
-
-  .event.left, .event.right {
-    width: 100%;
-    left: 0;
-  }
-
-  .event .time {
-    font-size: 28px;
-  }
-
-  .event p {
-    font-size: 16px;
-  }
 }
