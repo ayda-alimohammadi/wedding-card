@@ -1,15 +1,14 @@
 
 @font-face {
     font-family: "Nastaliq";
-    src: url('./Shekasteh\ V2.001.ttf') format("truetype");
+    src: url('https://raw.githubusercontent.com/NegarAliWedding/wedding/main/Shekasteh\ V2.001.ttf') format("truetype");
   }
 @font-face {
     font-family: "stusi";
-    src: url('https://raw.githubusercontent.com/ayda-alimohammadi/wedding/main/Ms%20Stusi.otf') format("opentype");
+    src: url('https://raw.githubusercontent.com/NegarAliWedding/wedding/main/Ms%20Stusi.otf') format("opentype");
 }
 html {
   scroll-behavior: smooth;
-  /* width:   ; */
   justify-content: center;
 
 }
@@ -46,7 +45,9 @@ body, html {
   position: absolute;
   inset: 0;
   height: 100%;
-  background: url('https://raw.githubusercontent.com/ayda-alimohammadi/wedding/main/IMG_0694%20(1).jpeg') top center/cover no-repeat;
+  
+  
+  background: url('https://raw.githubusercontent.com/NegarAliWedding/wedding/main/photo_1404-07-07%2018.02.24.png') top center/cover no-repeat;
   z-index: 1;
   border-radius: 20px;
   }
@@ -317,16 +318,6 @@ body, html {
   color: #c4a484;
   margin-top: 8px;
 }
-
-/* position: relative;
-width: 390px;
-height: 100vh;
-
-background: #fff;
-align-items: center;
-justify-content: center;
-margin: 0px auto 100px auto; */
-
 
 
 #play-btn {
