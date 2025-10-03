@@ -9,7 +9,8 @@
 }
 html {
   scroll-behavior: smooth;
-  width: ;
+  /* width:   ; */
+  justify-content: center;
 
 }
 body, html {
@@ -26,11 +27,11 @@ body, html {
 
 .card {
   position: relative;
-  width: 400px;
+  width: 390px;
   height: 100vh;
   border-radius: 30px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.25);
-  background: #fff;
+  background: #ffffff;
   align-items: center;
   justify-content: center;
   margin: 0px auto 100px auto;
@@ -205,8 +206,8 @@ body, html {
 
 .timeline {
   position: relative;
-  margin: 100px auto;
-  padding: 40px 0;
+  margin: 100px auto 0px auto;
+  padding: 40px 0px 0px 0px ;
   width: 90%;
   height: 100%;
   max-width: 500px;
@@ -221,7 +222,7 @@ body, html {
   bottom: 0px;
   left: 50%;
   width: 2px;
-  height: 125vh;
+  height: 115vh;
   background: #c4a484; /* کرم موکا */
   transform: translateX(-50%);
 }
@@ -238,7 +239,6 @@ body, html {
   border-radius: 50%;
   transform: translateX(-50%);
 }
-
 
 /* دایره بالایی */
 .timeline::after {
@@ -316,4 +316,40 @@ body, html {
   font-size: 22px;
   color: #c4a484;
   margin-top: 8px;
+}
+
+/* position: relative;
+width: 390px;
+height: 100vh;
+
+background: #fff;
+align-items: center;
+justify-content: center;
+margin: 0px auto 100px auto; */
+
+
+
+#play-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: rgba(196, 164, 132, 0.9); /* رنگ طلایی-موکا */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 9999;
+  transition: all 0.3s ease;
+}
+
+#play-btn:hover {
+  transform: scale(1.1);
+  background: rgba(196, 164, 132, 1);
 }

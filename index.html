@@ -8,54 +8,19 @@
   <link rel="stylesheet" href="index.css">
   
 </head>
+
 <body>
+
+  
   <div class="card">
-    <!-- <div class="top">
-      <div class="background"></div>
-      <div class="fade"></div>
-      <div class="content">
-        <div class="names"><p>علی و نگار</p></div>
-        <div class="invitation">
-          <p>معشوق به سامان شد</p>
-          <p>تا باد چنین بادا</p>
 
-        </div>
-      </div>
-      <div class="date-card">
-        <div class="row">
-          <div class="year">1404</div>
-          <div class="month">مهر</div>
-          <span class="day-number">25</span>
-        </div>
-      </div>
-      <p>با شادی و عشق فراوان، شما را به جشن ازدواجمان دعوت می‌کنیم </p>
-      
-      <div class="icons-row">
-
-        <div class="icon-box">
-          <a href="https://nshn.ir/dc_bfWxZp5tJ_m" target="_blank">
-            <i class="fa-solid fa-location-dot"></i>
-          </a>
-           
-        </div>
-        <div class="icon-box">
-          <a href="#timeline">
-            <i class="fa-solid fa-clock"></i>
-            
-          </a>
-
-        </div>
-      </div>
-      <div class="fade-icon"></div>
-    </div> -->
     <div class="top">
       <div class="background"></div>
       <div class="fade"></div>
       <div class="content">
         <div class="names"><p>علی و نگار</p></div>
         <div class="invitation">
-          <p>تا باد چنین بادا</p>
-          <p>معشوق به سامان شد</p>
+          <p>معشوق به سامان شد تا باد چنین بادا</p>
           
         </div>
         <div class="date-card">
@@ -124,11 +89,43 @@
       <p> سرو شام </p>
     </div>
     <div class="event right">
-      <span class="time">23:00</span>
-      <i class="fa-solid fa-car"></i>
+      <span class="time"><i class="fas fa-infinity"></i></span>
+      <!-- <i class="fa-solid fa-car"></i> -->
       <p> پایان مراسم </p>
     </div>
     <div class="end-circle"></div>
   </div>
+  <div class="photo-section">
+    <div class="photo-bg"></div>
+    <div class="photo-fade"></div>
+    
+  </div>
+  <!-- موزیک پس‌زمینه -->
+<audio id="bg-music" loop>
+  <source src="./alireza.mp3" type="audio/mpeg">
+</audio>
+
+<!-- دکمه شناور پخش موزیک -->
+<button id="play-btn">
+  <i class="fa-solid fa-music"></i>
+</button>
+
+<script>
+  const btn = document.getElementById("play-btn");
+  const music = document.getElementById("bg-music");
+  let playing = false;
+
+  btn.addEventListener("click", () => {
+    if (!playing) {
+      music.play();
+      btn.innerHTML = '<i class="fa-solid fa-pause"></i>'; // آیکون توقف
+    } else {
+      music.pause();
+      btn.innerHTML = '<i class="fa-solid fa-music"></i>'; // آیکون موزیک
+    }
+    playing = !playing;
+  });
+</script>
+
 </body>
 </html>
